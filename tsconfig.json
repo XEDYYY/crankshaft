@@ -1,20 +1,25 @@
 {
-    "compilerOptions": {
-      "module": "commonjs",
-      "noImplicitAny": true,
-      "sourceMap": false,
-      "outDir": "app",
-      "baseUrl": ".",
-      "target": "es2019",
-      "strict": false,
-      "paths": {
-        "*": ["node_modules/*"]
-      }
-    },
-    "include": [
-      "app/src/**/*"
-, "app/socialPreload.js"    ],
-    "exclude": [
-        "dist/*"
-    ]
-  }
+	"compilerOptions": {
+		"module": "commonjs",
+		"noImplicitAny": true,
+		"sourceMap": false,
+		"outDir": "app",
+		"baseUrl": ".",
+		"target": "es2021",
+		"strict": false,
+		"paths": {
+			"*": [
+				"node_modules/*"
+			]
+		},
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true
+	},
+	"include": [
+		"src/**/*"
+	],
+	"exclude": [
+		"dist/*",
+		"app/*"
+	]
+}
